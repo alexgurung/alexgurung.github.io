@@ -1,99 +1,64 @@
 export const siteConfig = {
-  author: 'Kieran Wang',
-  title: 'Vitesse theme for Astro',
-  subtitle: 'Vitesse theme for Astro, supports Vue and UnoCSS.',
-  description: 'A Minimal, SEO-friendly portfolio and blog theme for Astro.',
+  author: 'Alex Gurung',
+  title: 'Alex Gurung',
+  subtitle: 'Creative Technologist & HCI Researcher',
+  description: 'Portfolio of Alex Gurung - Graduate Research Assistant at UMich-Flint & Creative Technologist.',
   image: {
     src: '/hero.jpg',
-    alt: 'Website Main Image',
+    alt: 'Alex Gurung',
   },
-  email: 'kieranwme@gmail.com',
+  email: 'alexgrg@umich.edu',
   socialLinks: [
     {
       text: 'GitHub',
-      href: 'https://github.com/kieranwv/astro-theme-vitesse',
+      href: 'https://github.com/alexgurung',
       icon: 'i-simple-icons-github',
       header: 'i-ri-github-line',
     },
     {
-      text: 'Twitter',
-      href: '',
-      icon: 'i-simple-icons-x',
-      header: 'i-ri-twitter-x-line',
-    },
-    {
-      text: 'Linkedin',
-      href: '',
+      text: 'LinkedIn',
+      href: 'https://www.linkedin.com/in/alexgurung10',
       icon: 'i-simple-icons-linkedin',
     },
     {
-      text: 'Instagram',
-      href: '',
-      icon: 'i-simple-icons-instagram',
-    },
-    {
-      text: 'Youtube',
-      href: '',
-      icon: 'i-simple-icons-youtube',
+      text: 'Unsplash',
+      href: 'https://unsplash.com/@alexgurung',
+      icon: 'i-simple-icons-unsplash',
     },
   ],
   header: {
     logo: {
       src: '/favicon.svg',
-      alt: 'Logo Image',
+      alt: 'AG Logo',
     },
     navLinks: [
       {
-        text: 'Blog',
-        href: '/blog',
-      },
-      {
-        text: 'Notes',
-        href: '/blog/notes',
-      },
-      {
-        text: 'Talks',
-        href: '/blog/talks',
-      },
-      {
         text: 'Projects',
         href: '/projects',
+      },
+      {
+        text: 'Research & Blog',
+        href: '/blog',
       },
     ],
   },
   page: {
     blogLinks: [
       {
-        text: 'Blog',
+        text: 'All Posts',
         href: '/blog',
       },
       {
-        text: 'Notes',
-        href: '/blog/notes',
-      },
-      {
-        text: 'Talks',
-        href: '/blog/talks',
+        text: 'Research',
+        href: '/blog/research',
       },
     ],
   },
   footer: {
     navLinks: [
       {
-        text: 'Posts Props',
-        href: '/posts-props',
-      },
-      {
-        text: 'Markdown Style',
-        href: '/md-style',
-      },
-      {
-        text: 'View on Astro',
-        href: 'https://astro.build/themes/details/vitesse-theme-for-astro/',
-      },
-      {
         text: 'GitHub Repository',
-        href: 'https://github.com/kieranwv/astro-theme-vitesse',
+        href: 'https://github.com/alexgurung/alex-gurung-portfolio',
       },
     ],
   },

@@ -5,7 +5,9 @@ import { defineConfig } from 'astro/config'
 import UnoCSS from 'unocss/astro'
 
 export default defineConfig({
-  site: 'https://astro-theme-vitesse.netlify.app/',
+  // This is your new home address!
+  site: 'https://alexgurung.github.io',
+  base: '/',
   server: {
     port: 1977,
   },

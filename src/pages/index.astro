@@ -5,76 +5,78 @@ import siteConfig from '@/site-config'
 
 <BaseLayout description={siteConfig.description}>
   <article class="prose">
-    <h1 class="text-title">Vitesse theme</h1>
-    <p>Vitesse theme for Astro, supports Vue and UnoCSS.</p>
-    <p>
-      A minimal, SEO-riendly portfolio and blog theme for Astro. It's inspired by <a
-        target="_blank"
-        href="https://antfu.me">antfu.me</a
-      >.
-    </p>
-    <p>
-      <img width="640" height="360" src="/hero.jpg" alt="Hero Image" />
-    </p>
-    <p>
-      Based on first principles thinking, and you can also see from the picture
-      <sup>👆</sup>, the goal of this theme is to
-      <b>make complex things as simple as possible</b>
-      . So, the core of this theme is the content, and the other elements are just auxiliary.
-    </p>
-    <p>Here are the features you don't need to worry about:</p>
-    <ul>
-      <li>100 / 100 Lighthouse performance</li>
-      <li>Responsive</li>
-      <li>SEO-friendly</li>
-      <li>Light / Dark Theme</li>
-      <li>Markdown support</li>
-      <li>
-        <a target="_blank" href="https://mdxjs.com/">MDX</a>
-        (components in your markdown) support
-      </li>
-      <li>
-        <a target="_blank" href="https://vuejs.org/">Vue</a>
-        SFC component support
-      </li>
-      <li>Auto generated sitemap and RSS Feed</li>
-      <li>
-        <a target="_blank" href="https://vueuse.org/">VueUse</a>
-        &
-        <a target="_blank" href="https://lodash.com/">Lodash</a>
-        support
-      </li>
-    </ul>
-    <p>
-      By the way, this theme use the <a target="_blank" href="https://unocss.dev/">UnoCSS</a> for style, it's fast.
-    </p>
-    <p>
-      Visit it
-      <a target="_blank" href="https://github.com/kieranwv/astro-theme-vitesse"> on GitHub </a>
-      to fork the repository, read the docs or one-click deploy on Netlify.
-    </p>
-    <p>
-      If you like Vitesse theme for Astro, please
-      <a target="_blank" href="https://github.com/kieranwv"> click follow </a>
-      for me.
-    </p>
-    <hr class="hr-line" />
-    <p>Find me on</p>
-    <p class="flex gap-x-4 gap-y-2 flex-wrap">
-      {
-        siteConfig.socialLinks.map((link) => (
-          <a aria-label={link.text} href={link.href} target="_blank" class="prose-link">
-            <i class:list={[link.icon]} />
-            {link.text}
+    <div class="flex flex-col-reverse md:flex-row gap-8 items-start mb-8">
+      <div class="flex-1">
+        <h1 class="text-title mb-2">Alex Gurung</h1>
+        <p class="text-xl opacity-75 italic mt-0 mb-6">Bridging Human Behavior & Digital Interfaces.</p>
+
+        <p>
+          I am a <b>Graduate Research Assistant</b> at the <a target="_blank" href="https://www.umflint.edu/"
+            >University of Michigan-Flint</a
+          > and a Creative Technologist. My work blends <b>HCI Research</b> with <b>Full-Stack Development</b> to build tools
+          that matter.
+        </p>
+
+        <p>
+          Currently, I am predicting hospital readmissions with ML, designing AR for low-vision users, and creating
+          content that has reached over <b>5 million people</b> on Unsplash.
+        </p>
+
+        <div class="mt-6">
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            class="no-underline inline-flex items-center gap-2 px-6 py-2 bg-white !text-black rounded-full font-bold hover:bg-gray-200 transition-colors shadow-lg border border-transparent"
+          >
+            <span class="i-carbon-document-download text-xl"></span> Download Resume
           </a>
-        ))
-      }
-    </p>
-    <p>
-      If you have any questions, please email me at
-      <a prose-link aria-label={siteConfig.email} href={`mailto:${siteConfig.email}`}>
-        {siteConfig.email}
-      </a>.
-    </p>
+        </div>
+      </div>
+
+      <div class="flex-shrink-0 mx-auto md:mx-0">
+        <img
+          src="/hero.jpg"
+          alt="Alex Gurung"
+          class="w-48 h-48 md:w-56 md:h-56 object-cover rounded-2xl shadow-xl rotate-3 hover:rotate-0 transition-all duration-300"
+        />
+      </div>
+    </div>
+
+    <div class="my-8 border-l-4 border-gray-500 pl-4 italic bg-zinc-900/30 p-4 rounded-r-lg">
+      <p class="m-0">
+        🚀 <b>First Author:</b> IEEE FIE 2025 Conference<br />
+        📸 <b>Photography:</b> 5M+ Downloads on Unsplash<br />
+        💻 <b>Engineering:</b> Built EHR systems for 10+ hospitals
+      </p>
+    </div>
+
+    <hr class="hr-line" />
+
+    <p>Connect with me:</p>
+    <div class="flex gap-4">
+      <a
+        href="https://github.com/alexgurung"
+        target="_blank"
+        class="no-underline hover:text-blue-500 font-bold flex items-center gap-2"
+      >
+        <span class="i-simple-icons-github"></span> GitHub
+      </a>
+      <span>/</span>
+      <a
+        href="https://unsplash.com/@alexgurung"
+        target="_blank"
+        class="no-underline hover:text-blue-500 font-bold flex items-center gap-2"
+      >
+        <span class="i-simple-icons-unsplash"></span> Unsplash
+      </a>
+      <span>/</span>
+      <a
+        href="https://www.linkedin.com/in/alexgurung10"
+        target="_blank"
+        class="no-underline hover:text-blue-500 font-bold flex items-center gap-2"
+      >
+        <span class="i-simple-icons-linkedin"></span> LinkedIn
+      </a>
+    </div>
   </article>
 </BaseLayout>
