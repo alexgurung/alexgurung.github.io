@@ -2,7 +2,7 @@ import type { ProjectData } from '@/types'
 
 export const projectData: ProjectData = [
   {
-    title: 'HCI & Research',
+    title: 'Human Centered AI Research',
     projects: [
       {
         text: 'Smart Glass for Low Vision',
@@ -57,7 +57,7 @@ export const projectData: ProjectData = [
         href: 'https://unsplash.com/@YOUR_HANDLE',
       },
       {
-        text: 'UMich Content Creation',
+        text: 'University of Michigan | Content Creation',
         description: 'Social media campaigns reaching 10k+ views for College of Innovation & Technology.',
         icon: 'i-carbon-video',
         href: 'https://instagram.com',
