@@ -1,0 +1,159 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro'
+---
+
+<BaseLayout title="CV" description="Professional Curriculum Vitae - Alex Gurung">
+  <article class="prose max-w-none">
+    <div class="flex justify-between items-center mb-8">
+      <h1 class="text-4xl font-bold m-0 text-white">CV</h1>
+      <a
+        href="/resume.pdf"
+        target="_blank"
+        class="no-underline flex items-center gap-2 px-4 py-2 bg-zinc-800 hover:bg-zinc-700 rounded-lg transition-colors border border-zinc-700"
+      >
+        <span class="i-carbon-document-pdf text-2xl text-red-400"></span>
+        <span class="text-sm font-bold text-white">Download PDF</span>
+      </a>
+    </div>
+
+    <section class="mb-12 p-6 bg-zinc-900/30 rounded-xl border border-zinc-800">
+      <h2 class="text-2xl font-bold mb-6 mt-0 text-white border-b border-zinc-800 pb-2">General Information</h2>
+      <div class="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-y-3">
+        <span class="font-bold text-gray-400 uppercase text-xs tracking-wider">Full Name</span>
+        <span class="text-gray-200">Alex Gurung</span>
+        <span class="font-bold text-gray-400 uppercase text-xs tracking-wider">Contact</span>
+        <span class="text-gray-200">alexgurung12345@gmail.com | alexgrg@umich.edu </span>
+        <span class="font-bold text-gray-400 uppercase text-xs tracking-wider">Location</span>
+        <span class="text-gray-200">Michigan, USA</span>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold border-b border-zinc-800 pb-2 mb-8 text-white">Education</h2>
+
+      <div class="flex flex-col md:flex-row gap-6 mb-10">
+        <div class="min-w-[140px]">
+          <span class="bg-blue-900/40 text-blue-200 px-3 py-1 rounded-md text-xs font-mono">2024 — 2026</span>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold m-0 text-white">MS in Computer Science and Information Systems</h3>
+          <p class="m-0 text-blue-400 font-medium italic">University of Michigan - Flint</p>
+          <p class="text-sm opacity-70 mt-1">Graduate Student Research Assistant (GSRA) | Expected: May 2026</p>
+          <p class="text-sm mt-2 text-gray-400">
+            <b>Key Courses:</b> HCI, Machine Learning, Cloud Analytics, Health Informatics, Adv Software Engineering.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row gap-6">
+        <div class="min-w-[140px]">
+          <span class="bg-zinc-800 text-gray-300 px-3 py-1 rounded-md text-xs font-mono">2018 — 2021</span>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold m-0 text-white">BSc in Computing</h3>
+          <p class="m-0 text-gray-400 italic">Islington College (London Metropolitan University)</p>
+          <p class="text-sm opacity-70 mt-1">Grade: 1st Class Honors (Equivalent to 3.8-4.0 US GPA)</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold border-b border-zinc-800 pb-2 mb-8 text-white">Research Experience</h2>
+
+      <div class="flex flex-col md:flex-row gap-6 mb-12">
+        <div class="min-w-[140px]">
+          <span class="bg-emerald-900/40 text-emerald-200 px-3 py-1 rounded-md text-xs font-mono">Aug 2024 — Now</span>
+        </div>
+        <div class="flex-1">
+          <h3 class="text-lg font-bold m-0 text-white">Graduate Student Research Assistant</h3>
+          <p class="m-0 italic text-emerald-400">Advisor: Dr. Charlotte Tang | University of Michigan</p>
+          <ul class="list-disc pl-5 mt-4 space-y-3 opacity-90 text-sm md:text-base">
+            <li>
+              <b>First Author:</b> Peer-reviewed publication and presentation at <b>IEEE FIE 2025 Conference</b> on digital
+              health technology.
+            </li>
+            <li>
+              <b>Mixed-Methods Analysis:</b> Applied Python (NumPy, Pandas), SPSS, and thematic coding for actionable research
+              insights.
+            </li>
+            <li>
+              <b>Guest Lecturer:</b> Taught CSC-510 (HCI) sessions on Figma prototyping and research-driven UI methods.
+            </li>
+            <li>Designed and executed Qualtrics surveys collecting 180+ responses across 15+ U.S. states.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold border-b border-zinc-800 pb-2 mb-8 text-white">Professional Experience</h2>
+
+      <div class="flex flex-col md:flex-row gap-6 mb-10">
+        <div class="min-w-[140px]">
+          <span class="bg-purple-900/40 text-purple-200 px-3 py-1 rounded-md text-xs font-mono">2021 — 2024</span>
+        </div>
+        <div class="flex-1">
+          <h3 class="text-lg font-bold m-0 text-white">Front End Developer</h3>
+          <p class="m-0 text-purple-400 italic">ComPro Computers</p>
+          <ul class="list-disc pl-5 mt-4 space-y-3 opacity-90 text-sm">
+            <li>
+              Led the implementation of <b>MedCubes EHR</b> across 10+ hospitals, reducing paper documentation by 85%.
+            </li>
+            <li>
+              Developed custom UI components using <b>Vue.js, JavaScript, and Bootstrap</b> to enhance clinician efficiency.
+            </li>
+            <li>Integrated telemedicine features, boosting remote consultation access by 40% in rural areas.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row gap-6">
+        <div class="min-w-[140px]">
+          <span class="bg-zinc-800 text-gray-300 px-3 py-1 rounded-md text-xs font-mono">2025 — Now</span>
+        </div>
+        <div class="flex-1">
+          <h3 class="text-lg font-bold m-0 text-white">Digital Media Ambassador</h3>
+          <p class="m-0 text-gray-400 italic">UM-Flint College of Innovation & Technology</p>
+          <ul class="list-disc pl-5 mt-4 space-y-2 opacity-90 text-sm">
+            <li>Creates multimedia content generating <b>10k+ views</b> across LinkedIn, Instagram, and TikTok.</li>
+            <li>Writes technical articles on AI, Cybersecurity, and IoT for university newsletters.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold border-b border-zinc-800 pb-2 mb-8 text-white">Skills & Certifications</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+        <div class="p-4 bg-zinc-900/50 rounded-lg border border-zinc-800">
+          <h4 class="font-bold text-blue-400 mb-2">Technical Stack</h4>
+          <p class="m-0 opacity-80">
+            Python (Scikit-learn), JavaScript, Vue.js, React, Java, Flutter, SQL, AWS, Docker.
+          </p>
+        </div>
+        <div class="p-4 bg-zinc-900/50 rounded-lg border border-zinc-800">
+          <h4 class="font-bold text-emerald-400 mb-2">Design Tools</h4>
+          <p class="m-0 opacity-80">Figma, Adobe XD, Photoshop, Premiere Pro, Final Cut Pro, VS Code.</p>
+        </div>
+      </div>
+      <div class="mt-4 p-4 bg-zinc-900/50 rounded-lg border border-zinc-800">
+        <h4 class="font-bold text-white mb-2 text-sm">Certifications</h4>
+        <p class="m-0 text-xs opacity-70">
+          IBM AI Analyst Mastery, Google UX Ideation, AWS Academy Cloud Foundations, Cisco CCNP.
+        </p>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold border-b border-zinc-800 pb-2 mb-8 text-white">Interests</h2>
+      <div class="flex flex-wrap gap-2">
+        <span class="px-3 py-1 bg-zinc-800 rounded-full text-xs text-gray-300"
+          >Photography (5M+ Unsplash Downloads)</span
+        >
+        <span class="px-3 py-1 bg-zinc-800 rounded-full text-xs text-gray-300">Hiking & Trekking</span>
+        <span class="px-3 py-1 bg-zinc-800 rounded-full text-xs text-gray-300">Football</span>
+        <span class="px-3 py-1 bg-zinc-800 rounded-full text-xs text-gray-300">Travel</span>
+      </div>
+    </section>
+  </article>
+</BaseLayout>
