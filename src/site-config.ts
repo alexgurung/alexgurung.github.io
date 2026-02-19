@@ -2,7 +2,7 @@ export const siteConfig = {
   author: 'Alex Gurung',
   title: 'Alex Gurung',
   subtitle: 'Creative Technologist & HCI Researcher',
-  description: 'Portfolio of Alex Gurung - Graduate Research Assistant at UMich-Flint & Creative Technologist.',
+  description: 'Portfolio of Alex Gurung - Graduate Research Assistant at University of Michigan',
   image: {
     src: '/hero.jpg',
     alt: 'Alex Gurung',
@@ -37,8 +37,8 @@ export const siteConfig = {
         href: '/projects',
       },
       {
-        text: 'Research & Blog',
-        href: '/blog',
+        text: 'CV',
+        href: '/cv',
       },
     ],
   },
