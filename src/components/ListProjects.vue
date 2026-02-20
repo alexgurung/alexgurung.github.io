@@ -18,16 +18,20 @@ defineProps<{
       </div>
     </template>
 
-    <li v-for="project in list" :key="project.text" class="group rd-2 p-4 mb-2 hover:bg-white/5 transition-colors border border-transparent hover:border-white/10 flex flex-col">
+    <li
+      v-for="project in list"
+      :key="project.text"
+      class="group rd-2 p-4 mb-2 bg-zinc-900/40 border border-zinc-800 hover:border-zinc-700 hover:bg-white/5 transition-all flex flex-col shadow-sm"
+    >
       <a flex items-center target="_blank" :href="project.href" :aria-label="project.text" class="w-full">
         <div ml-2 mr-4 pt-2>
-          <i text-4xl inline-block :class="project.icon || 'i-carbon-unknown'" />
+          <i text-4xl inline-block :class="project.icon || 'i-carbon-unknown'" class="group-hover:text-blue-400 transition-colors" />
         </div>
         <div font-normal lh-tight>
-          <div class="text-lg text-white font-semibold group-hover:text-main transition-colors">
+          <div class="text-lg text-white font-semibold group-hover:text-blue-400 transition-colors">
             {{ project.text }}
           </div>
-          <div style="color: white !important; opacity: 1 !important;" class="text-sm mt-1">
+          <div style="color: #a1a1aa !important; opacity: 1 !important;" class="text-sm mt-1">
             {{ project.description }}
           </div>
         </div>
