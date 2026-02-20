@@ -20,7 +20,7 @@ export const projectData: ProjectData = [
         text: 'Mental Wellbeing in Digital Solutions',
         description: 'Presented at IEEE FIE 2025: Mixed-methods analysis on digital health technology.',
         icon: 'i-carbon-book',
-        href: 'https://ieeexplore.ieee.org/document/11328367', // General profile
+        href: '/projects/mental-wellbeing', // General profile
         paperHref: 'https://ieeexplore.ieee.org/document/11328367',
       },
     ],
