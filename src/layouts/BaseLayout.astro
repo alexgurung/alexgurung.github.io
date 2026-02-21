@@ -14,6 +14,26 @@ const { ...head } = Astro.props
   <head>
     <BaseHead {...head} />
     <ViewTransitions />
+    <meta name="google-site-verification" content="BRZdQFNLG2cN1L5-QXtJIhSZOHA0CGewI3l6ptfrmAM" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Alex Gurung",
+        "jobTitle": "Graduate Research Assistant",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "University of Michigan"
+        },
+        "url": "https://alexgurung.github.io",
+        "image": "https://alexgurung.github.io/hero.jpg",
+        "sameAs": [
+          "https://www.linkedin.com/in/alexgurung10",
+          "https://github.com/alexgurung",
+          "https://unsplash.com/@alexgrg101"
+        ]
+      }
+    </script>
   </head>
   <body class="bg-main text-main min-h-screen font-sans w-full bg-dot">
     <Header client:load />
