@@ -1,5 +1,5 @@
 ---
-import { projectData } from './data'
+import { projectData } from './_data.ts'
 import BaseLayout from '@/layouts/BaseLayout.astro'
 import ListProjects from '@/components/ListProjects.vue'
 
@@ -11,22 +11,22 @@ const standardCategories = projectData.filter((category) => category.title !== '
   <h1 class="mb-10 text-title font-black text-4xl">Projects</h1>
 
   <div class="mb-16 sm:mb-24">
-    standardCategories.length > 0 && (
-    <div>
-      {
-        standardCategories.map((i) => (
-          <div class="mb-16">
-            <h2 class="select-none relative h-auto pointer-events-none mb-10">
-              <span class="text-4xl color-transparent font-bold text-stroke-1.5 text-stroke-hex-aaa op100 dark:op100 block leading-tight">
-                {i.title}
-              </span>
-            </h2>
-            <ListProjects list={i.projects} />
-          </div>
-        ))
-      }
-    </div>
-    ) }
+    {
+      standardCategories.length > 0 && (
+        <div>
+          {standardCategories.map((i) => (
+            <div class="mb-16">
+              <h2 class="select-none relative h-auto pointer-events-none mb-10">
+                <span class="text-4xl color-transparent font-bold text-stroke-1.5 text-stroke-hex-aaa op100 dark:op100 block leading-tight">
+                  {i.title}
+                </span>
+              </h2>
+              <ListProjects list={i.projects} />
+            </div>
+          ))}
+        </div>
+      )
+    }
 
     <section class="mt-24 mb-24">
       <h2 class="select-none relative h-auto pointer-events-none mb-10">
@@ -38,96 +38,115 @@ const standardCategories = projectData.filter((category) => category.title !== '
       </h2>
 
       <div class="flex flex-col gap-6">
-        href="https://unsplash.com/@alexgrg101" target="_blank" class="group relative flex flex-col md:flex-row
-        items-center justify-between p-6 md:p-8 rounded-3xl bg-zinc-900/40 border border-zinc-800/50 overflow-hidden
-        hover:bg-zinc-900/80 hover:border-zinc-600 transition-all duration-500 no-underline shadow-lg" >
-        <div class="relative z-20 flex-1 w-full md:w-auto mb-6 md:mb-0">
-          <div class="flex items-center gap-3 mb-3">
-            <span class="i-simple-icons-unsplash text-xl text-zinc-400 group-hover:text-white transition-colors"></span>
-            <h3 class="text-2xl font-bold text-white m-0 group-hover:text-zinc-200 transition-colors">
-              Unsplash Portfolio
-            </h3>
+        <a
+          href="https://unsplash.com/@alexgrg101"
+          target="_blank"
+          class="group relative flex flex-col md:flex-row items-center justify-between p-6 md:p-8 rounded-3xl bg-zinc-900/40 border border-zinc-800/50 overflow-hidden hover:bg-zinc-900/80 hover:border-zinc-600 transition-all duration-500 no-underline shadow-lg"
+        >
+          <div class="relative z-20 flex-1 w-full md:w-auto mb-6 md:mb-0">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="i-simple-icons-unsplash text-xl text-zinc-400 group-hover:text-white transition-colors"
+              ></span>
+              <h3 class="text-2xl font-bold text-white m-0 group-hover:text-zinc-200 transition-colors">
+                Unsplash Portfolio
+              </h3>
+            </div>
+            <p class="text-zinc-400 text-sm m-0 max-w-md leading-relaxed">
+              Photography with over 5 million downloads worldwide.
+            </p>
           </div>
-          <p class="text-zinc-400 text-sm m-0 max-w-md leading-relaxed">
-            Photography with over 5 million downloads worldwide.
-          </p>
-        </div>
+
+          <div
+            class="relative z-20 flex items-center justify-between w-full md:w-auto gap-6 border-t md:border-t-0 border-zinc-800 pt-6 md:pt-0"
+          >
+            <div class="text-left md:text-right">
+              <span class="block text-3xl font-black text-white leading-none mb-1">5M+</span>
+              <span class="text-[10px] text-zinc-500 font-mono uppercase tracking-widest leading-none">Downloads</span>
+            </div>
+            <div
+              class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all border border-white/10"
+            >
+              <span class="i-carbon-arrow-up-right text-lg"></span>
+            </div>
+          </div>
+        </a>
 
         <div
-          class="relative z-20 flex items-center justify-between w-full md:w-auto gap-6 border-t md:border-t-0 border-zinc-800 pt-6 md:pt-0"
+          class="group relative flex flex-col md:flex-row items-start md:items-center justify-between p-6 md:p-8 rounded-3xl bg-zinc-900/40 border border-zinc-800/50 overflow-hidden hover:bg-zinc-900/80 hover:border-blue-900/50 transition-all duration-500 shadow-lg"
         >
-          <div class="text-left md:text-right">
-            <span class="block text-3xl font-black text-white leading-none mb-1">5M+</span>
-            <span class="text-[10px] text-zinc-500 font-mono uppercase tracking-widest leading-none">Downloads</span>
+          <div
+            class="absolute -right-32 -top-32 w-96 h-96 bg-[#00274C]/20 blur-[100px] rounded-full pointer-events-none group-hover:bg-[#00274C]/40 transition-colors duration-700"
+          >
           </div>
           <div
-            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all border border-white/10"
+            class="absolute -left-32 -bottom-32 w-96 h-96 bg-[#FFCB05]/5 blur-[100px] rounded-full pointer-events-none group-hover:bg-[#FFCB05]/10 transition-colors duration-700"
           >
-            <span class="i-carbon-arrow-up-right text-lg"></span>
+          </div>
+
+          <div class="relative z-20 flex-1 pr-0 md:pr-12 w-full mb-8 md:mb-0">
+            <div class="flex items-center gap-3 mb-4">
+              <span
+                class="text-blue-400 font-mono text-[10px] uppercase tracking-widest flex items-center gap-1.5 border border-blue-500/30 bg-blue-500/10 px-2 py-1 rounded"
+              >
+                Digital Strategy
+              </span>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-3 m-0">University of Michigan | Content Creation</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed m-0 max-w-lg">
+              Social media campaigns reaching 10k+ views for the College of Innovation & Technology.
+            </p>
+          </div>
+
+          <div class="relative z-20 flex flex-col sm:flex-row md:flex-col gap-3 w-full md:w-auto min-w-[220px]">
+            <a
+              href="https://medium.com/@Innovative.Insights/my-ieee-fie-2025-experience-by-cit-grad-student-alex-gurung-8156bc8ce6d8"
+              target="_blank"
+              class="flex items-center gap-4 px-4 py-3 bg-zinc-950 border border-zinc-800 rounded-xl hover:bg-zinc-900 hover:border-white/50 transition-all no-underline group/btn shadow-sm"
+            >
+              <span class="i-simple-icons-medium text-xl text-zinc-500 group-hover/btn:text-white transition-colors"
+              ></span>
+              <span class="text-sm font-bold text-zinc-400 group-hover/btn:text-white transition-colors"
+                >Medium Article</span
+              >
+              <span class="i-carbon-arrow-up-right ml-auto text-zinc-600 group-hover/btn:text-white transition-colors"
+              ></span>
+            </a>
+
+            <a
+              href="https://www.umflint.edu/cit/"
+              target="_blank"
+              class="flex items-center gap-4 px-4 py-3 bg-zinc-950 border border-zinc-800 rounded-xl hover:bg-[#00274C] hover:border-[#FFCB05]/50 transition-all no-underline group/btn shadow-sm"
+            >
+              <div
+                class="w-5 h-5 rounded-[4px] bg-[#00274C] text-[#FFCB05] border border-[#FFCB05]/30 font-serif font-black flex items-center justify-center text-[11px] group-hover/btn:bg-[#FFCB05] group-hover/btn:text-[#00274C] transition-colors"
+              >
+                M
+              </div>
+              <span class="text-sm font-bold text-zinc-400 group-hover/btn:text-white transition-colors"
+                >CIT Portal</span
+              >
+              <span
+                class="i-carbon-arrow-up-right ml-auto text-zinc-600 group-hover/btn:text-[#FFCB05] transition-colors"
+              ></span>
+            </a>
+
+            <a
+              href="#"
+              target="_blank"
+              class="flex items-center gap-4 px-4 py-3 bg-zinc-950 border border-zinc-800 rounded-xl hover:bg-zinc-900 hover:border-pink-500/50 transition-all no-underline group/btn shadow-sm"
+            >
+              <span
+                class="i-simple-icons-instagram text-xl text-zinc-500 group-hover/btn:text-pink-500 transition-colors"
+              ></span>
+              <span class="text-sm font-bold text-zinc-400 group-hover/btn:text-white transition-colors">Instagram</span
+              >
+              <span
+                class="i-carbon-arrow-up-right ml-auto text-zinc-600 group-hover/btn:text-pink-500 transition-colors"
+              ></span>
+            </a>
           </div>
         </div>
       </div>
-
-      <div
-        class="group relative flex flex-col md:flex-row items-start md:items-center justify-between p-6 md:p-8 rounded-3xl bg-zinc-900/40 border border-zinc-800/50 overflow-hidden hover:bg-zinc-900/80 hover:border-blue-900/50 transition-all duration-500 shadow-lg"
-        <div
-        class="absolute -right-32 -top-32 w-96 h-96 bg-[#00274C]/20 blur-[100px] rounded-full pointer-events-none group-hover:bg-[#00274C]/40 transition-colors duration-700"
-      >
-      </div>
-      <div
-        class="absolute -left-32 -bottom-32 w-96 h-96 bg-[#FFCB05]/5 blur-[100px] rounded-full pointer-events-none group-hover:bg-[#FFCB05]/10 transition-colors duration-700"
-      >
-      </div>
-
-      <div class="relative z-20 flex-1 pr-0 md:pr-12 w-full mb-8 md:mb-0">
-        <div class="flex items-center gap-3 mb-4">
-          <span
-            class="text-blue-400 font-mono text-[10px] uppercase tracking-widest flex items-center gap-1.5 border border-blue-500/30 bg-blue-500/10 px-2 py-1 rounded"
-          >
-            Digital Strategy
-          </span>
-        </div>
-        <h3 class="text-2xl font-bold text-white mb-3 m-0">University of Michigan | Content Creation</h3>
-        <p class="text-zinc-400 text-sm leading-relaxed m-0 max-w-lg">
-          Social media campaigns reaching 10k+ views for the College of Innovation & Technology.
-        </p>
-      </div>
-
-      <div class="relative z-20 flex flex-col sm:flex-row md:flex-col gap-3 w-full md:w-auto min-w-[220px]">
-        href="https://medium.com/@Innovative.Insights/my-ieee-fie-2025-experience-by-cit-grad-student-alex-gurung-8156bc8ce6d8"
-        target="_blank" class="flex items-center gap-4 px-4 py-3 bg-zinc-950 border border-zinc-800 rounded-xl
-        hover:bg-zinc-900 hover:border-white/50 transition-all no-underline group/btn shadow-sm" >
-        <span class="i-simple-icons-medium text-xl text-zinc-500 group-hover/btn:text-white transition-colors"></span>
-        <span class="text-sm font-bold text-zinc-400 group-hover/btn:text-white transition-colors">Medium Article</span>
-        <span class="i-carbon-arrow-up-right ml-auto text-zinc-600 group-hover/btn:text-white transition-colors"></span>
-      </div>
-
-      <a
-        href="https://www.umflint.edu/cit/"
-        target="_blank"
-        class="flex items-center gap-4 px-4 py-3 bg-zinc-950 border border-zinc-800 rounded-xl hover:bg-[#00274C] hover:border-[#FFCB05]/50 transition-all no-underline group/btn shadow-sm"
-      >
-        <div
-          class="w-5 h-5 rounded-[4px] bg-[#00274C] text-[#FFCB05] border border-[#FFCB05]/30 font-serif font-black flex items-center justify-center text-[11px] group-hover/btn:bg-[#FFCB05] group-hover/btn:text-[#00274C] transition-colors"
-        >
-          M
-        </div>
-        <span class="text-sm font-bold text-zinc-400 group-hover/btn:text-white transition-colors">CIT Portal</span>
-        <span class="i-carbon-arrow-up-right ml-auto text-zinc-600 group-hover/btn:text-[#FFCB05] transition-colors"
-        ></span>
-      </a>
-
-      <a
-        href="#"
-        target="_blank"
-        class="flex items-center gap-4 px-4 py-3 bg-zinc-950 border border-zinc-800 rounded-xl hover:bg-zinc-900 hover:border-pink-500/50 transition-all no-underline group/btn shadow-sm"
-      >
-        <span class="i-simple-icons-instagram text-xl text-zinc-500 group-hover/btn:text-pink-500 transition-colors"
-        ></span>
-        <span class="text-sm font-bold text-zinc-400 group-hover/btn:text-white transition-colors">Instagram</span>
-        <span class="i-carbon-arrow-up-right ml-auto text-zinc-600 group-hover/btn:text-pink-500 transition-colors"
-        ></span>
-      </a>
     </section>
   </div>
 </BaseLayout>

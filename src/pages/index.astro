@@ -4,7 +4,7 @@ import siteConfig from '@/site-config'
 ---
 
 <BaseLayout description={siteConfig.description}>
-  <article class="prose">
+  <article class="prose max-w-none">
     <div class="flex flex-col-reverse md:flex-row gap-8 items-start mb-8">
       <div class="flex-1">
         <h1 class="text-title mb-2">Alex Gurung</h1>
@@ -73,160 +73,168 @@ import siteConfig from '@/site-config'
 
           <div
             class="relative flex flex-col md:flex-row gap-6 md:gap-10 p-4 md:p-6 rounded-3xl border border-zinc-800/50 bg-zinc-900/30 hover:bg-zinc-900/80 hover:border-blue-500/40 transition-all duration-500 shadow-lg overflow-hidden"
-            <div
-            class="w-full md:w-2/5 flex-shrink-0 aspect-[4/3] md:aspect-video relative rounded-2xl overflow-hidden bg-zinc-950"
           >
-            <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors z-10"></div>
-            <span
-              class="absolute top-4 left-4 z-20 bg-blue-600/90 backdrop-blur-sm text-white text-[10px] font-bold px-3 py-1.5 rounded uppercase tracking-widest shadow-lg"
+            <div
+              class="w-full md:w-2/5 flex-shrink-0 aspect-[4/3] md:aspect-video relative rounded-2xl overflow-hidden bg-zinc-950"
             >
-              HCI Research
-            </span>
-            <img
-              src="/smart-glasses.jpg"
-              alt="Mental Wellbeing App"
-              class="w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:scale-105"
-            />
-          </div>
-
-          <div class="flex-1 min-w-0 flex flex-col py-2 md:py-6 pr-0 md:pr-4">
-            <div class="flex flex-wrap items-center gap-3 mb-4">
+              <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors z-10"></div>
               <span
-                class="text-emerald-400 font-mono text-[10px] uppercase tracking-widest flex items-center gap-1.5 border border-emerald-500/30 bg-emerald-500/10 px-2 py-1 rounded whitespace-nowrap"
+                class="absolute top-4 left-4 z-20 bg-blue-600/90 backdrop-blur-sm text-white text-[10px] font-bold px-3 py-1.5 rounded uppercase tracking-widest shadow-lg"
               >
-                <span class="i-carbon-microphone"></span> IEEE FIE 2025
+                HCI Research
               </span>
-              <span
-                class="text-purple-400 font-mono text-[10px] uppercase tracking-widest flex items-center gap-1.5 border border-purple-500/30 bg-purple-500/10 px-2 py-1 rounded whitespace-nowrap"
-              >
-                <span class="i-carbon-mobile"></span> App Design
-              </span>
+              <img
+                src="/smart-glasses.jpg"
+                alt="Mental Wellbeing App"
+                class="w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:scale-105"
+              />
             </div>
 
-            <h3
-              class="text-2xl md:text-3xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors m-0 break-words whitespace-normal"
-            >
-              Designing a "Stealth" Mental Health Ecosystem
-            </h3>
-            <p class="text-zinc-400 text-sm md:text-base leading-relaxed mb-6 break-words whitespace-normal">
-              Designing culturally adaptive digital solutions that leverage Generative AI to overcome the stigma of
-              seeking help among international students.
-            </p>
+            <div class="flex-1 min-w-0 flex flex-col py-2 md:py-6 pr-0 md:pr-4">
+              <div class="flex flex-wrap items-center gap-3 mb-4">
+                <span
+                  class="text-emerald-400 font-mono text-[10px] uppercase tracking-widest flex items-center gap-1.5 border border-emerald-500/30 bg-emerald-500/10 px-2 py-1 rounded whitespace-nowrap"
+                >
+                  <span class="i-carbon-microphone"></span> IEEE FIE 2025
+                </span>
+                <span
+                  class="text-purple-400 font-mono text-[10px] uppercase tracking-widest flex items-center gap-1.5 border border-purple-500/30 bg-purple-500/10 px-2 py-1 rounded whitespace-nowrap"
+                >
+                  <span class="i-carbon-mobile"></span> App Design
+                </span>
+              </div>
 
-            <div class="mt-auto flex flex-wrap items-center gap-x-8 gap-y-4 pt-6 border-t border-zinc-800/80">
-              <div class="block">
-                <div class="text-white font-bold text-lg leading-none mb-1">148</div>
-                <div class="text-[10px] text-zinc-500 font-mono uppercase tracking-widest leading-none">
-                  Participants
+              <h3
+                class="text-2xl md:text-3xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors m-0 break-words whitespace-normal"
+              >
+                Designing a "Stealth" Mental Health Ecosystem
+              </h3>
+              <p class="text-zinc-400 text-sm md:text-base leading-relaxed mb-6 break-words whitespace-normal">
+                Designing culturally adaptive digital solutions that leverage Generative AI to overcome the stigma of
+                seeking help among international students.
+              </p>
+
+              <div class="mt-auto flex flex-wrap items-center gap-x-8 gap-y-4 pt-6 border-t border-zinc-800/80">
+                <div class="block">
+                  <div class="text-white font-bold text-lg leading-none mb-1">148</div>
+                  <div class="text-[10px] text-zinc-500 font-mono uppercase tracking-widest leading-none">
+                    Participants
+                  </div>
+                </div>
+                <div class="block">
+                  <div class="text-white font-bold text-lg leading-none mb-1">Mixed</div>
+                  <div class="text-[10px] text-zinc-500 font-mono uppercase tracking-widest leading-none">Methods</div>
+                </div>
+
+                <div
+                  class="ml-auto flex items-center gap-2 text-white font-bold text-sm bg-white/5 px-5 py-2.5 rounded-full group-hover:bg-blue-600 group-hover:border-blue-500 transition-all border border-white/10 whitespace-nowrap"
+                >
+                  View Case Study <span
+                    class="i-carbon-arrow-right transition-transform duration-300 group-hover:translate-x-1"></span>
                 </div>
               </div>
-              <div class="block">
-                <div class="text-white font-bold text-lg leading-none mb-1">Mixed</div>
-                <div class="text-[10px] text-zinc-500 font-mono uppercase tracking-widest leading-none">Methods</div>
+            </div>
+          </div>
+        </a>
+
+        <a href="/projects" class="group block no-underline relative">
+          <div
+            class="absolute inset-0 bg-emerald-500/0 group-hover:bg-emerald-500/5 blur-3xl transition-colors duration-700 rounded-3xl pointer-events-none"
+          >
+          </div>
+
+          <div
+            class="relative flex flex-col md:flex-row-reverse gap-6 md:gap-10 p-4 md:p-6 rounded-3xl border border-zinc-800/50 bg-zinc-900/30 hover:bg-zinc-900/80 hover:border-emerald-500/40 transition-all duration-500 shadow-lg overflow-hidden"
+          >
+            <div
+              class="w-full md:w-2/5 flex-shrink-0 aspect-[4/3] md:aspect-video relative rounded-2xl overflow-hidden bg-zinc-950"
+            >
+              <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors z-10"></div>
+              <span
+                class="absolute top-4 right-4 z-20 bg-emerald-600/90 backdrop-blur-sm text-white text-[10px] font-bold px-3 py-1.5 rounded uppercase tracking-widest shadow-lg"
+              >
+                Applied AI
+              </span>
+              <img
+                src="/hospital22.gif"
+                alt="30-day Hospital Readmission"
+                class="w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:scale-105"
+              />
+            </div>
+
+            <div class="flex-1 min-w-0 flex flex-col py-2 md:py-6 pl-0 md:pl-4">
+              <div class="flex flex-wrap items-center gap-3 mb-4">
+                <span
+                  class="text-blue-400 font-mono text-[10px] uppercase tracking-widest flex items-center gap-1.5 border border-blue-500/30 bg-blue-500/10 px-2 py-1 rounded whitespace-nowrap"
+                >
+                  <span class="i-carbon-machine-learning"></span> Machine Learning
+                </span>
               </div>
 
-              <div
-                class="ml-auto flex items-center gap-2 text-white font-bold text-sm bg-white/5 px-5 py-2.5 rounded-full group-hover:bg-blue-600 group-hover:border-blue-500 transition-all border border-white/10 whitespace-nowrap"
+              <h3
+                class="text-2xl md:text-3xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors m-0 break-words whitespace-normal"
               >
-                View Case Study <span
-                  class="i-carbon-arrow-right transition-transform duration-300 group-hover:translate-x-1"></span>
+                30-day Hospital Readmission Prediction
+              </h3>
+              <p class="text-zinc-400 text-sm md:text-base leading-relaxed mb-6 break-words whitespace-normal">
+                Building interpretable Machine Learning models to predict patient readmission risk and assist clinical
+                decision-making.
+              </p>
+
+              <div class="mt-auto flex flex-wrap items-center gap-x-8 gap-y-4 pt-6 border-t border-zinc-800/80">
+                <div class="block">
+                  <div class="text-white font-bold text-lg leading-none mb-1">10+</div>
+                  <div class="text-[10px] text-zinc-500 font-mono uppercase tracking-widest leading-none">
+                    Hospitals
+                  </div>
+                </div>
+                <div class="block">
+                  <div class="text-white font-bold text-lg leading-none mb-1">SHAP Plots</div>
+                  <div class="text-[10px] text-zinc-500 font-mono uppercase tracking-widest leading-none">
+                    Framework
+                  </div>
+                </div>
+
+                <div
+                  class="mr-auto md:mr-0 md:ml-auto flex items-center gap-2 text-white font-bold text-sm bg-white/5 px-5 py-2.5 rounded-full group-hover:bg-emerald-600 group-hover:border-emerald-500 transition-all border border-white/10 whitespace-nowrap"
+                >
+                  View Project <span
+                    class="i-carbon-arrow-right transition-transform duration-300 group-hover:translate-x-1"></span>
+                </div>
               </div>
             </div>
           </div>
         </a>
       </div>
-
-      <a href="/projects" class="group block no-underline relative">
-        <div
-          class="absolute inset-0 bg-emerald-500/0 group-hover:bg-emerald-500/5 blur-3xl transition-colors duration-700 rounded-3xl pointer-events-none"
-        >
-        </div>
-
-        <div
-          class="relative flex flex-col md:flex-row-reverse gap-6 md:gap-10 p-4 md:p-6 rounded-3xl border border-zinc-800/50 bg-zinc-900/30 hover:bg-zinc-900/80 hover:border-emerald-500/40 transition-all duration-500 shadow-lg overflow-hidden"
-          <div
-          class="w-full md:w-2/5 flex-shrink-0 aspect-[4/3] md:aspect-video relative rounded-2xl overflow-hidden bg-zinc-950"
-        >
-          <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors z-10"></div>
-          <span
-            class="absolute top-4 right-4 z-20 bg-emerald-600/90 backdrop-blur-sm text-white text-[10px] font-bold px-3 py-1.5 rounded uppercase tracking-widest shadow-lg"
-          >
-            Applied AI
-          </span>
-          <img
-            src="/hospital22.gif"
-            alt="30-day Hospital Readmission"
-            class="w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:scale-105"
-          />
-        </div>
-
-        <div class="flex-1 min-w-0 flex flex-col py-2 md:py-6 pl-0 md:pl-4">
-          <div class="flex flex-wrap items-center gap-3 mb-4">
-            <span
-              class="text-blue-400 font-mono text-[10px] uppercase tracking-widest flex items-center gap-1.5 border border-blue-500/30 bg-blue-500/10 px-2 py-1 rounded whitespace-nowrap"
-            >
-              <span class="i-carbon-machine-learning"></span> Machine Learning
-            </span>
-          </div>
-
-          <h3
-            class="text-2xl md:text-3xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors m-0 break-words whitespace-normal"
-          >
-            30-day Hospital Readmission Prediction
-          </h3>
-          <p class="text-zinc-400 text-sm md:text-base leading-relaxed mb-6 break-words whitespace-normal">
-            Building interpretable Machine Learning models to predict patient readmission risk and assist clinical
-            decision-making.
-          </p>
-
-          <div class="mt-auto flex flex-wrap items-center gap-x-8 gap-y-4 pt-6 border-t border-zinc-800/80">
-            <div class="block">
-              <div class="text-white font-bold text-lg leading-none mb-1">10+</div>
-              <div class="text-[10px] text-zinc-500 font-mono uppercase tracking-widest leading-none">Hospitals</div>
-            </div>
-            <div class="block">
-              <div class="text-white font-bold text-lg leading-none mb-1">SHAP Plots</div>
-              <div class="text-[10px] text-zinc-500 font-mono uppercase tracking-widest leading-none">Framework</div>
-            </div>
-
-            <div
-              class="mr-auto md:mr-0 md:ml-auto flex items-center gap-2 text-white font-bold text-sm bg-white/5 px-5 py-2.5 rounded-full group-hover:bg-emerald-600 group-hover:border-emerald-500 transition-all border border-white/10 whitespace-nowrap"
-            >
-              View Project <span
-                class="i-carbon-arrow-right transition-transform duration-300 group-hover:translate-x-1"></span>
-            </div>
-          </div>
-        </div>
-      </a>
     </section>
+
+    <hr class="hr-line" />
+
+    <p>Connect with me:</p>
+    <div class="flex gap-4">
+      <a
+        href="https://github.com/alexgurung"
+        target="_blank"
+        class="no-underline hover:text-blue-500 font-bold flex items-center gap-2"
+      >
+        <span class="i-simple-icons-github"></span> GitHub
+      </a>
+      <span>/</span>
+      <a
+        href="https://unsplash.com/@alexgurung"
+        target="_blank"
+        class="no-underline hover:text-blue-500 font-bold flex items-center gap-2"
+      >
+        <span class="i-simple-icons-unsplash"></span> Unsplash
+      </a>
+      <span>/</span>
+      <a
+        href="https://www.linkedin.com/in/alexgurung10"
+        target="_blank"
+        class="no-underline hover:text-blue-500 font-bold flex items-center gap-2"
+      >
+        <span class="i-simple-icons-linkedin"></span> LinkedIn
+      </a>
+    </div>
   </article>
 </BaseLayout>
-
-<hr class="hr-line" />
-
-<p>Connect with me:</p>
-<div class="flex gap-4">
-  <a
-    href="https://github.com/alexgurung"
-    target="_blank"
-    class="no-underline hover:text-blue-500 font-bold flex items-center gap-2"
-  >
-    <span class="i-simple-icons-github"></span> GitHub
-  </a>
-  <span>/</span>
-  <a
-    href="https://unsplash.com/@alexgurung"
-    target="_blank"
-    class="no-underline hover:text-blue-500 font-bold flex items-center gap-2"
-  >
-    <span class="i-simple-icons-unsplash"></span> Unsplash
-  </a>
-  <span>/</span>
-  <a
-    href="https://www.linkedin.com/in/alexgurung10"
-    target="_blank"
-    class="no-underline hover:text-blue-500 font-bold flex items-center gap-2"
-  >
-    <span class="i-simple-icons-linkedin"></span> LinkedIn
-  </a>
-</div>
