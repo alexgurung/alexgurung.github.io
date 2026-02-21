@@ -65,274 +65,277 @@ import BaseLayout from '@/layouts/BaseLayout.astro'
         </div>
       </div>
     </section>
-  </article>
 
-  <section class="mb-16">
-    <h3 class="text-sm font-bold text-zinc-500 uppercase tracking-[0.2em] mb-6 text-center">Project Roadmap</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 relative">
-      <div
-        class="hidden md:block absolute top-1/2 left-1/4 right-1/4 h-px bg-gradient-to-r from-emerald-500/50 via-zinc-700 to-purple-500/50 -translate-y-1/2 z-0"
-      >
-      </div>
-
-      <div class="relative z-10 p-6 bg-zinc-900/80 border border-emerald-500/30 rounded-2xl backdrop-blur-md shadow-lg">
-        <div class="flex items-center gap-3 mb-3">
-          <span
-            class="flex items-center justify-center w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-bold border border-emerald-500/50"
-            >1</span
-          >
-          <span class="text-emerald-400 font-mono text-xs uppercase tracking-widest">Completed</span>
-        </div>
-        <h4 class="text-white font-bold text-xl mb-2">Academic Research</h4>
-        <p class="text-zinc-400 text-sm m-0">
-          Surveyed 148 international students, performed thematic analysis, and published findings at IEEE FIE 2025.
-        </p>
-      </div>
-
-      <div class="relative z-10 p-6 bg-zinc-900/80 border border-purple-500/30 rounded-2xl backdrop-blur-md shadow-lg">
-        <div class="flex items-center gap-3 mb-3">
-          <span
-            class="flex items-center justify-center w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-xs font-bold border border-purple-500/50"
-            >2</span
-          >
-          <span class="text-purple-400 font-mono text-xs uppercase tracking-widest flex items-center gap-2">
-            <span class="w-2 h-2 rounded-full bg-purple-500 animate-pulse"></span> Ongoing
-          </span>
-        </div>
-        <h4 class="text-white font-bold text-xl mb-2">Product Development</h4>
-        <p class="text-zinc-400 text-sm m-0">
-          Leading Participatory Design (PD) sessions to build a culturally sensitive app based on Phase 1 insights.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="mb-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-    <div class="order-2 lg:order-1 relative group">
-      <div
-        class="absolute -inset-4 bg-emerald-500/10 blur-3xl rounded-[2rem] opacity-0 group-hover:opacity-100 transition-opacity duration-1000"
-      >
-      </div>
-      <div
-        class="relative bg-zinc-900/50 rounded-2xl border border-zinc-800 p-2 overflow-hidden shadow-2xl transition-transform duration-500 group-hover:-translate-y-2"
-      >
-        <img
-          src="/presentation.jpeg"
-          alt="Alex presenting research at IEEE FIE 2025"
-          class="w-full h-auto rounded-xl object-cover"
-        />
+    <section class="mb-16">
+      <h3 class="text-sm font-bold text-zinc-500 uppercase tracking-[0.2em] mb-6 text-center">Project Roadmap</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 relative">
         <div
-          class="absolute bottom-4 left-4 right-4 bg-black/80 backdrop-blur-md border border-white/10 rounded-lg p-3"
+          class="hidden md:block absolute top-1/2 left-1/4 right-1/4 h-px bg-gradient-to-r from-emerald-500/50 via-zinc-700 to-purple-500/50 -translate-y-1/2 z-0"
         >
-          <p class="text-[10px] font-mono text-emerald-400 uppercase tracking-widest m-0 flex items-center gap-2">
-            <span class="i-carbon-microphone text-sm"></span> IEEE FIE Conference Presentation 2025, Nashville, USA
+        </div>
+
+        <div
+          class="relative z-10 p-6 bg-zinc-900/80 border border-emerald-500/30 rounded-2xl backdrop-blur-md shadow-lg"
+        >
+          <div class="flex items-center gap-3 mb-3">
+            <span
+              class="flex items-center justify-center w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-bold border border-emerald-500/50"
+              >1</span
+            >
+            <span class="text-emerald-400 font-mono text-xs uppercase tracking-widest">Completed</span>
+          </div>
+          <h4 class="text-white font-bold text-xl mb-2">Academic Research</h4>
+          <p class="text-zinc-400 text-sm m-0">
+            Surveyed 148 international students, performed thematic analysis, and published findings at IEEE FIE 2025.
+          </p>
+        </div>
+
+        <div
+          class="relative z-10 p-6 bg-zinc-900/80 border border-purple-500/30 rounded-2xl backdrop-blur-md shadow-lg"
+        >
+          <div class="flex items-center gap-3 mb-3">
+            <span
+              class="flex items-center justify-center w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-xs font-bold border border-purple-500/50"
+              >2</span
+            >
+            <span class="text-purple-400 font-mono text-xs uppercase tracking-widest flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-purple-500 animate-pulse"></span> Ongoing
+            </span>
+          </div>
+          <h4 class="text-white font-bold text-xl mb-2">Product Development</h4>
+          <p class="text-zinc-400 text-sm m-0">
+            Leading Participatory Design (PD) sessions to build a culturally sensitive app based on Phase 1 insights.
           </p>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="order-1 lg:order-2">
-      <h2 class="text-3xl font-bold text-white mb-4">Phase 1: Establishing the Foundation</h2>
-      <p class="text-zinc-400 leading-relaxed mb-6">
-        Before designing a solution, we needed to understand the true scope of the problem. We conducted a mixed-methods
-        study surveying <strong>148 international students</strong> across 46 countries.
-      </p>
-      <div class="space-y-4">
-        <div class="flex items-start gap-3 p-4 bg-zinc-900/40 border border-zinc-800 rounded-xl">
-          <span class="i-carbon-data-base text-2xl text-emerald-500 mt-1"></span>
-          <div>
-            <h4 class="text-white font-bold text-sm m-0">Quantitative Data</h4>
-            <p class="text-zinc-500 text-sm m-0 mt-1">
-              Evaluated stress occurrences and demographics using Fisher-Freeman-Halton exact tests.
-            </p>
-          </div>
-        </div>
-        <div class="flex items-start gap-3 p-4 bg-zinc-900/40 border border-zinc-800 rounded-xl">
-          <span class="i-carbon-network-4 text-2xl text-emerald-500 mt-1"></span>
-          <div>
-            <h4 class="text-white font-bold text-sm m-0">Qualitative Insights</h4>
-            <p class="text-zinc-500 text-sm m-0 mt-1">
-              Utilized Affinity Diagramming on open-ended responses to identify cultural stigma barriers.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="mb-24">
-    <div class="flex items-center gap-4 mb-6">
-      <span class="i-carbon-microscope text-2xl text-emerald-400"></span>
-      <h2 class="text-3xl font-bold text-white m-0">The Research Gap</h2>
-    </div>
-
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-      <div>
-        <p class="text-zinc-300 text-lg leading-relaxed mb-6">
-          International students are a high-risk group for acculturative stress, yet they are the least likely to use
-          university health services due to <strong>cultural stigma</strong> and <strong>privacy concerns</strong>.
-        </p>
-        <div class="p-6 bg-zinc-900/50 rounded-xl border-l-4 border-emerald-500">
-          <p class="italic text-zinc-400 m-0">
-            "I feel guilty spending money on therapy when my parents are sacrificing so much for my tuition."
-          </p>
-          <p class="text-sm text-zinc-500 mt-2 font-mono">— Participant #04, Graduate Student</p>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-1 gap-4">
+    <section class="mb-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="order-2 lg:order-1 relative group">
         <div
-          class="p-6 bg-zinc-900/30 rounded-xl border border-zinc-800 flex items-center justify-between group hover:border-emerald-500/50 transition-colors"
+          class="absolute -inset-4 bg-emerald-500/10 blur-3xl rounded-[2rem] opacity-0 group-hover:opacity-100 transition-opacity duration-1000"
         >
-          <div>
-            <span class="block text-4xl font-bold text-white mb-1">93.8%</span>
-            <span class="text-xs font-bold text-zinc-500 uppercase tracking-wider">Academic Pressure</span>
-          </div>
-          <span class="i-carbon-education text-4xl text-zinc-700 group-hover:text-emerald-500/50 transition-colors"
-          ></span>
         </div>
         <div
-          class="p-6 bg-zinc-900/30 rounded-xl border border-zinc-800 flex items-center justify-between group hover:border-emerald-500/50 transition-colors"
+          class="relative bg-zinc-900/50 rounded-2xl border border-zinc-800 p-2 overflow-hidden shadow-2xl transition-transform duration-500 group-hover:-translate-y-2"
         >
-          <div>
-            <span class="block text-4xl font-bold text-white mb-1">93.2%</span>
-            <span class="text-xs font-bold text-zinc-500 uppercase tracking-wider">Financial Stress</span>
-          </div>
-          <span class="i-carbon-currency text-4xl text-zinc-700 group-hover:text-emerald-500/50 transition-colors"
-          ></span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="mb-24">
-    <div class="flex items-center gap-4 mb-8">
-      <span class="i-carbon-user-profile text-2xl text-emerald-400"></span>
-      <h2 class="text-3xl font-bold text-white m-0">The Core Audience Profile</h2>
-    </div>
-
-    <div class="p-1 bg-gradient-to-br from-emerald-500/20 via-zinc-800/50 to-purple-500/20 rounded-3xl">
-      <div class="bg-zinc-950 rounded-[1.4rem] p-8 md:p-12 border border-white/5">
-        <div class="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-12 items-center">
+          <img
+            src="/presentation.jpeg"
+            alt="Alex presenting research at IEEE FIE 2025"
+            class="w-full h-auto rounded-xl object-cover"
+          />
           <div
-            class="flex flex-col items-center text-center md:items-start md:text-left border-b md:border-b-0 md:border-r border-zinc-800 pb-8 md:pb-0 md:pr-8"
+            class="absolute bottom-4 left-4 right-4 bg-black/80 backdrop-blur-md border border-white/10 rounded-lg p-3"
+          >
+            <p class="text-[10px] font-mono text-emerald-400 uppercase tracking-widest m-0 flex items-center gap-2">
+              <span class="i-carbon-microphone text-sm"></span> IEEE FIE Conference Presentation 2025, Nashville, USA
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="order-1 lg:order-2">
+        <h2 class="text-3xl font-bold text-white mb-4">Phase 1: Establishing the Foundation</h2>
+        <p class="text-zinc-400 leading-relaxed mb-6">
+          Before designing a solution, we needed to understand the true scope of the problem. We conducted a
+          mixed-methods study surveying <strong>148 international students</strong> across 46 countries.
+        </p>
+        <div class="space-y-4">
+          <div class="flex items-start gap-3 p-4 bg-zinc-900/40 border border-zinc-800 rounded-xl">
+            <span class="i-carbon-data-base text-2xl text-emerald-500 mt-1"></span>
+            <div>
+              <h4 class="text-white font-bold text-sm m-0">Quantitative Data</h4>
+              <p class="text-zinc-500 text-sm m-0 mt-1">
+                Evaluated stress occurrences and demographics using Fisher-Freeman-Halton exact tests.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 p-4 bg-zinc-900/40 border border-zinc-800 rounded-xl">
+            <span class="i-carbon-network-4 text-2xl text-emerald-500 mt-1"></span>
+            <div>
+              <h4 class="text-white font-bold text-sm m-0">Qualitative Insights</h4>
+              <p class="text-zinc-500 text-sm m-0 mt-1">
+                Utilized Affinity Diagramming on open-ended responses to identify cultural stigma barriers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-24">
+      <div class="flex items-center gap-4 mb-6">
+        <span class="i-carbon-microscope text-2xl text-emerald-400"></span>
+        <h2 class="text-3xl font-bold text-white m-0">The Research Gap</h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="text-zinc-300 text-lg leading-relaxed mb-6">
+            International students are a high-risk group for acculturative stress, yet they are the least likely to use
+            university health services due to <strong>cultural stigma</strong> and <strong>privacy concerns</strong>.
+          </p>
+          <div class="p-6 bg-zinc-900/50 rounded-xl border-l-4 border-emerald-500">
+            <p class="italic text-zinc-400 m-0">
+              "I feel guilty spending money on therapy when my parents are sacrificing so much for my tuition."
+            </p>
+            <p class="text-sm text-zinc-500 mt-2 font-mono">— Participant #04, Graduate Student</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 gap-4">
+          <div
+            class="p-6 bg-zinc-900/30 rounded-xl border border-zinc-800 flex items-center justify-between group hover:border-emerald-500/50 transition-colors"
+          >
+            <div>
+              <span class="block text-4xl font-bold text-white mb-1">93.8%</span>
+              <span class="text-xs font-bold text-zinc-500 uppercase tracking-wider">Academic Pressure</span>
+            </div>
+            <span class="i-carbon-education text-4xl text-zinc-700 group-hover:text-emerald-500/50 transition-colors"
+            ></span>
+          </div>
+          <div
+            class="p-6 bg-zinc-900/30 rounded-xl border border-zinc-800 flex items-center justify-between group hover:border-emerald-500/50 transition-colors"
+          >
+            <div>
+              <span class="block text-4xl font-bold text-white mb-1">93.2%</span>
+              <span class="text-xs font-bold text-zinc-500 uppercase tracking-wider">Financial Stress</span>
+            </div>
+            <span class="i-carbon-currency text-4xl text-zinc-700 group-hover:text-emerald-500/50 transition-colors"
+            ></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-24">
+      <div class="flex items-center gap-4 mb-8">
+        <span class="i-carbon-user-profile text-2xl text-emerald-400"></span>
+        <h2 class="text-3xl font-bold text-white m-0">The Core Audience Profile</h2>
+      </div>
+
+      <div class="p-1 bg-gradient-to-br from-emerald-500/20 via-zinc-800/50 to-purple-500/20 rounded-3xl">
+        <div class="bg-zinc-950 rounded-[1.4rem] p-8 md:p-12 border border-white/5">
+          <div class="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-12 items-center">
+            <div
+              class="flex flex-col items-center text-center md:items-start md:text-left border-b md:border-b-0 md:border-r border-zinc-800 pb-8 md:pb-0 md:pr-8"
+            >
+              <div
+                class="w-24 h-24 rounded-full bg-zinc-800 border-2 border-emerald-500/50 flex items-center justify-center mb-4 shadow-[0_0_20px_rgba(16,185,129,0.2)]"
+              >
+                <span class="i-carbon-education text-4xl text-emerald-400"></span>
+              </div>
+              <h3 class="text-2xl font-bold text-white mb-2">The International Scholar</h3>
+              <p class="text-zinc-400 text-sm font-mono uppercase tracking-widest">Primary Archetype</p>
+            </div>
+
+            <div class="space-y-6">
+              <p class="text-zinc-300 leading-relaxed m-0">
+                Driven but highly vulnerable to acculturative stress, this user group consistently internalizes their
+                struggles. They view seeking professional therapy as a "personal weakness" or a financial burden on
+                their families.
+              </p>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="bg-zinc-900/50 p-4 rounded-xl border border-zinc-800">
+                  <span class="i-carbon-warning-alt text-emerald-500 mb-2 block"></span>
+                  <h4 class="text-white text-sm font-bold mb-1">Primary Pain Points</h4>
+                  <p class="text-zinc-500 text-xs m-0">
+                    Severe academic pressure (93.8%), tuition/financial anxiety (93.2%), and isolation.
+                  </p>
+                </div>
+                <div class="bg-zinc-900/50 p-4 rounded-xl border border-zinc-800">
+                  <span class="i-carbon-favorite text-emerald-500 mb-2 block"></span>
+                  <h4 class="text-white text-sm font-bold mb-1">Current Workarounds</h4>
+                  <p class="text-zinc-500 text-xs m-0">
+                    Heavy reliance on self-management, social distraction, and informal peer networks.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-24 relative max-w-5xl mx-auto">
+      <div class="absolute -top-12 -left-12 w-64 h-64 bg-emerald-500/5 blur-[100px] rounded-full pointer-events-none">
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-12 items-center relative z-10">
+        <div class="flex flex-col gap-6">
+          <div class="flex items-center gap-3">
+            <span class="i-carbon-presentation-file text-2xl text-emerald-400"></span>
+            <h3 class="text-3xl font-bold text-white m-0">Theoretical Framework</h3>
+          </div>
+
+          <p class="text-zinc-400 text-lg leading-relaxed m-0">
+            Our digital solution is grounded in <span class="text-emerald-400 font-medium italic"
+              >Acculturative Stress Theory</span
+            >. This framework allowed us to map both extrinsic stressors (financial, academic) and intrinsic stressors
+            directly to actionable UX features.
+          </p>
+
+          <div class="grid grid-cols-2 gap-4 mt-2">
+            <div class="p-4 bg-zinc-900/40 border border-zinc-800 rounded-xl">
+              <h4 class="text-[10px] font-bold text-emerald-500 uppercase tracking-widest mb-2">Extrinsic</h4>
+              <p class="text-xs text-zinc-500 m-0">
+                Academic pressure, financial concerns, and socio-cultural adjustment.
+              </p>
+            </div>
+            <div class="p-4 bg-zinc-900/40 border border-zinc-800 rounded-xl">
+              <h4 class="text-[10px] font-bold text-emerald-500 uppercase tracking-widest mb-2">Intrinsic</h4>
+              <p class="text-xs text-zinc-500 m-0">Future uncertainty, visa status, and psychological impact.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative group">
+          <div
+            class="absolute inset-0 bg-emerald-500/10 blur-[40px] rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+          >
+          </div>
+
+          <div
+            class="relative bg-white rounded-2xl border border-zinc-200 p-4 shadow-xl transition-all duration-500 group-hover:-translate-y-1 w-full sm:w-[320px]"
           >
             <div
-              class="w-24 h-24 rounded-full bg-zinc-800 border-2 border-emerald-500/50 flex items-center justify-center mb-4 shadow-[0_0_20px_rgba(16,185,129,0.2)]"
+              class="absolute inset-0 opacity-[0.03] pointer-events-none bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:16px_16px]"
             >
-              <span class="i-carbon-education text-4xl text-emerald-400"></span>
             </div>
-            <h3 class="text-2xl font-bold text-white mb-2">The International Scholar</h3>
-            <p class="text-zinc-400 text-sm font-mono uppercase tracking-widest">Primary Archetype</p>
-          </div>
 
-          <div class="space-y-6">
-            <p class="text-zinc-300 leading-relaxed m-0">
-              Driven but highly vulnerable to acculturative stress, this user group consistently internalizes their
-              struggles. They view seeking professional therapy as a "personal weakness" or a financial burden on their
-              families.
-            </p>
+            <img
+              src="/accul.png"
+              alt="Acculturative Stress Theory Mapping"
+              class="relative z-10 w-full h-auto object-contain drop-shadow-[0_4px_10px_rgba(0,0,0,0.05)]"
+            />
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div class="bg-zinc-900/50 p-4 rounded-xl border border-zinc-800">
-                <span class="i-carbon-warning-alt text-emerald-500 mb-2 block"></span>
-                <h4 class="text-white text-sm font-bold mb-1">Primary Pain Points</h4>
-                <p class="text-zinc-500 text-xs m-0">
-                  Severe academic pressure (93.8%), tuition/financial anxiety (93.2%), and isolation.
-                </p>
-              </div>
-              <div class="bg-zinc-900/50 p-4 rounded-xl border border-zinc-800">
-                <span class="i-carbon-favorite text-emerald-500 mb-2 block"></span>
-                <h4 class="text-white text-sm font-bold mb-1">Current Workarounds</h4>
-                <p class="text-zinc-500 text-xs m-0">
-                  Heavy reliance on self-management, social distraction, and informal peer networks.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="mb-24 relative max-w-5xl mx-auto">
-    <div class="absolute -top-12 -left-12 w-64 h-64 bg-emerald-500/5 blur-[100px] rounded-full pointer-events-none">
-    </div>
-
-    <div class="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-12 items-center relative z-10">
-      <div class="flex flex-col gap-6">
-        <div class="flex items-center gap-3">
-          <span class="i-carbon-presentation-file text-2xl text-emerald-400"></span>
-          <h3 class="text-3xl font-bold text-white m-0">Theoretical Framework</h3>
-        </div>
-
-        <p class="text-zinc-400 text-lg leading-relaxed m-0">
-          Our digital solution is grounded in <span class="text-emerald-400 font-medium italic"
-            >Acculturative Stress Theory</span
-          >. This framework allowed us to map both extrinsic stressors (financial, academic) and intrinsic stressors
-          directly to actionable UX features.
-        </p>
-
-        <div class="grid grid-cols-2 gap-4 mt-2">
-          <div class="p-4 bg-zinc-900/40 border border-zinc-800 rounded-xl">
-            <h4 class="text-[10px] font-bold text-emerald-500 uppercase tracking-widest mb-2">Extrinsic</h4>
-            <p class="text-xs text-zinc-500 m-0">
-              Academic pressure, financial concerns, and socio-cultural adjustment.
+            <p class="text-center text-[9px] text-zinc-400 mt-3 uppercase tracking-widest font-mono">
+              Acculturative Stress Theory Mapping
             </p>
           </div>
-          <div class="p-4 bg-zinc-900/40 border border-zinc-800 rounded-xl">
-            <h4 class="text-[10px] font-bold text-emerald-500 uppercase tracking-widest mb-2">Intrinsic</h4>
-            <p class="text-xs text-zinc-500 m-0">Future uncertainty, visa status, and psychological impact.</p>
-          </div>
         </div>
       </div>
+    </section>
 
-      <div class="relative group">
-        <div
-          class="absolute inset-0 bg-emerald-500/10 blur-[40px] rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"
-        >
-        </div>
-
-        <div
-          class="relative bg-white rounded-2xl border border-zinc-200 p-4 shadow-xl transition-all duration-500 group-hover:-translate-y-1 w-full sm:w-[320px]"
-        >
-          <div
-            class="absolute inset-0 opacity-[0.03] pointer-events-none bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:16px_16px]"
-          >
-          </div>
-
-          <img
-            src="/accul.png"
-            alt="Acculturative Stress Theory Mapping"
-            class="relative z-10 w-full h-auto object-contain drop-shadow-[0_4px_10px_rgba(0,0,0,0.05)]"
-          />
-
-          <p class="text-center text-[9px] text-zinc-400 mt-3 uppercase tracking-widest font-mono">
-            Acculturative Stress Theory Mapping
-          </p>
-        </div>
+    <section class="mb-24">
+      <div class="flex items-center gap-4 mb-2">
+        <span class="i-carbon-group text-2xl text-purple-400"></span>
+        <h2 class="text-3xl font-bold text-white m-0">Phase 2: Participatory Design (Ongoing)</h2>
       </div>
-    </div>
-  </section>
 
-  <section class="mb-24">
-    <div class="flex items-center gap-4 mb-2">
-      <span class="i-carbon-group text-2xl text-purple-400"></span>
-      <h2 class="text-3xl font-bold text-white m-0">Phase 2: Participatory Design (Ongoing)</h2>
-    </div>
+      <p class="text-zinc-300 text-lg leading-relaxed mb-8 max-w-3xl">
+        Transitioning from academic research to product development, I am currently leading co-design sessions under the
+        advisement of <strong>Dr. Charlotte Tang</strong>. We are actively designing <em>with</em> diverse student groups,
+        rather than just <em>for</em> them, to build our high-fidelity application.
+      </p>
 
-    <p class="text-zinc-300 text-lg leading-relaxed mb-8 max-w-3xl">
-      Transitioning from academic research to product development, I am currently leading co-design sessions under the
-      advisement of <strong>Dr. Charlotte Tang</strong>. We are actively designing <em>with</em> diverse student groups,
-      rather than just <em>for</em> them, to build our high-fidelity application.
-    </p>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-12">
+        <div class="order-2 lg:order-1">
+          <div class="p-8 bg-zinc-900/40 border border-zinc-800 rounded-2xl relative overflow-hidden group">
+            class="absolute -top-12 -right-12 w-32 h-32 bg-purple-500/5 blur-3xl rounded-full transition-colors
+            group-hover:bg-purple-500/10" >
 
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-12">
-      <div class="order-2 lg:order-1">
-        <div class="p-8 bg-zinc-900/40 border border-zinc-800 rounded-2xl relative overflow-hidden group">
-          <div
-            class="absolute -top-12 -right-12 w-32 h-32 bg-purple-500/5 blur-3xl rounded-full transition-colors group-hover:bg-purple-500/10"
-          >
             <h3 class="text-2xl font-bold text-white mb-4">The Pivot: "The Wellness Wallet"</h3>
             <p class="text-zinc-400 leading-relaxed m-0">
               During our ongoing sticky-note sessions, a critical UX insight emerged. Participants actively rejected the
@@ -372,7 +375,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro'
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <section class="mb-24">
       <div class="flex items-center gap-4 mb-8">
@@ -606,5 +609,5 @@ import BaseLayout from '@/layouts/BaseLayout.astro'
         <span class="i-carbon-logo-github ml-2"></span>
       </a>
     </div>
-  </section>
+  </article>
 </BaseLayout>
