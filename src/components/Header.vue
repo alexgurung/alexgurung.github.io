@@ -82,12 +82,12 @@ function toggleNavDrawer() {
   >
     <div class="flex items-center h-full">
       <a href="/" mr-6 aria-label="Header Logo Image">
-        <img width="32" height="32" :src="siteConfig.header.logo.src" :alt="siteConfig.header.logo.alt">
+        <img width="48" height="48" :src="siteConfig.header.logo.src" :alt="siteConfig.header.logo.alt">
       </a>
       <nav class="sm:flex hidden flex-wrap gap-x-6 position-initial flex-row">
         <a
           v-for="link in navLinks" :key="link.text" :aria-label="`${link.text}`" :target="getLinkTarget(link.href)"
-          nav-link :href="link.href"
+          nav-link :href="link.href" class="text-xl font-bold hover:text-white transition-colors"
         >
           {{ link.text }}
         </a>
@@ -111,7 +111,7 @@ function toggleNavDrawer() {
     <i i-ri-menu-2-fill />
     <a
       v-for="link in navLinks" :key="link.text" :aria-label="`${link.text}`" :target="getLinkTarget(link.href)"
-      nav-link :href="link.href" @click="toggleNavDrawer()"
+      nav-link :href="link.href" class="font-bold" @click="toggleNavDrawer()"
     >
       {{ link.text }}
     </a>

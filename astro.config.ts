@@ -8,6 +8,10 @@ export default defineConfig({
   // This is your new home address!
   site: 'https://alexgurung.github.io',
   base: '/',
+
+  // Enables background loading to eliminate navigation lag
+  prefetch: true,
+
   server: {
     port: 1977,
   },
